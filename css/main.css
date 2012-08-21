@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* 
+	Master Style Sheet developed by Aaron Gough
+	http://www.aarongough.com
+*/
+
+/************************************************
+		 Styling for Standard Elements	
+*************************************************/
+
+body, html{
+border: 0;
+padding: 0;
+margin: 0;
+}
+
+html{
+min-height: 100%;
+_height: 100%;
+}
+
+body{
+font-size: 14px;
+text-align: left;
+background:  #787878 url(../images/template-images/background-repeat.jpg) bottom left;
+color: #efefef;
+font: 14px 'BitstreamVeraSansRoman', Arial, sans-serif;
+letter-spacing: 0;
+line-height: 1.50em;
+}
+
+h1, h2, h3, h4, h5{
+margin: 0;
+padding: 0;
+font-weight: bold;
+color: #313030;
+font-family: 'QuicksandBook', Arial, sans-serif;
+line-height: 1.15em;
+}
+
+h1{
+font-size: 30px;
+}
+
+h2{
+font-size: 25px;
+color: #efefef;
+}
+
+h3{
+font-size: 18px;
+}
+
+h4{
+font-size: 14px;
+}
+
+h5{
+font-size: 14px;
+}
+
+img{
+border: 0;
+}
+
+a{
+color: #FAA819;
+text-decoration: none;
+outline: none;
+}
+
+a:hover{
+color: white;
+text-shadow: 0px 0px 8px #2a2a2a;
+-moz-text-shadow: 0px 0px 8px #2a2a2a;
+-webkit-text-shadow: 0px 0px 8px #2a2a2a;
+}
+
+blockquote{
+padding: 0 0 0 15px;
+border: 2px solid #efefef;
+border-width: 0 0 0 2px;
+margin: 0;
+font-style: italic;
+}
+
+pre{
+padding: 6px 10px 6px 0;
+background: white url(/images/template-images/code-background.gif) top left repeat-y;
+border: 1px solid silver;
+color: #2a2a2a;
+display: block;
+font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+line-height: 1.1em;
+overflow: hidden;
+overflow-x: auto;
+overflow-y: hidden;
+}
+
+.lineno{
+color: grey;
+display: block;
+float: left;
+width: 20px;
+text-align: center;
+}
+
+p code, ul code{
+background: grey;
+padding: 2px 4px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+/************************************************
+		Custom Styling for Specific IDs		
+*************************************************/
+
+#black_box, #menu_background, #menu_container{
+position: fixed;
+_position: absolute;
+bottom: 25px;
+height: 67px;
+}
+
+#black_box{
+left: 0px;
+width: 140px;
+background: black;
+-moz-border-radius: 0 4px 4px 0;
+-webkit-border-radius: 0 4px 4px 0;
+border-radius: 0 4px 4px 0;
+}
+
+#black_box_image{
+position: absolute;
+top: 9px;
+right: 9px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+}
+
+#menu_background{
+left: 145px;
+width: 100%;
+background: black;
+opacity: 0.90;
+-moz-opacity: 0.90;
+filter:alpha(opacity=90);
+z-index: 9998;
+-moz-border-radius: 4px 0 0 4px;
+-webkit-border-radius: 4px 0 0 4px;
+border-radius: 4px 0 0 4px;
+}
+
+#menu_container{
+left: 145px;
+width: 100%;
+z-index: 9999;
+}
+
+#logo{
+position: fixed;
+_position: absolute;
+bottom: 116px;
+left: 87px;
+}
+
+#content{
+position: absolute;
+top: 25px;
+left: 167px;
+width: 700px;
+padding-bottom: 125px;
+color: #efefef;
+}
+
+#ad_container{
+position: fixed;
+top: 50px;
+left: 887px;
+width: 120px;
+font-size: 10px;
+padding: 10px;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+background: black;
+opacity: 0.90;
+line-height: 1.3em;
+padding-bottom: 5px;
+}
+
+#adzerk_by{
+margin: 0px;
+padding-bottom: 0px;
+text-align: center;
+font-size: 8px;
+}
+
+#blog_list{
+margin: 0;
+padding: 10px 0 10px 10px;
+list-style: none;
+font-size: 16px;
+line-height: 1.70em;
+}
+
+#about_image{
+padding: 20px 10px 0 0;
+display: block;
+float: left;
+}
+
+#about_quote{
+margin: 0 0 0 125px;
+}
+
+.project{
+width: 330px;
+height: 100px;
+padding: 10px 10px 20px 10px;
+float: left;
+}
+
+.clearer{
+width: 100%;
+height: 1px;
+clear: both;
+overflow: hidden;
+}
+
+.signature{
+font: 30px/35px 'DanielRegular', Arial, sans-serif;
+letter-spacing: 0;
+margin-left: 17px;
+padding-top: 10px;
+}
