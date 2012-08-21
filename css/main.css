@@ -141,10 +141,20 @@ body{
 }
 
 .portfolio_item{
-  width: 160px;
-  height: 160px;
+  width: 205px;
+  height: 153px;
   float: left;
   z-index: 9999;
   position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
   box-shadow:-1px -1px 0px rgba(0,0,0,0.4), 1px 1px 0px rgba(255,255,255,0.4);
+}
+
+.pad{
+  margin-right: 20px;
+}
+
+.portfolio_item a img{
+  width: 205px;
 }
