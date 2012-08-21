@@ -1,26 +1,44 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
-  	<title>Gough - {{ page.title}}</title>
+  	<title>Gough - {{ page.title }}</title>
   	<link rel="icon" type="image/jpeg" href="http://www.gravatar.com/avatar/7c800b8782ba084e5a6ab71a5a607137?s=80" />
   	<link href="/css/main.css" rel="stylesheet" />
+  	
+  	<link href="/fonts/bitstream-vera-sans/stylesheet.css" rel="stylesheet" />
+    <link href="/fonts/daniel/stylesheet.css" rel="stylesheet" />
+    <link href="/fonts/quicksand/stylesheet.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="logo_container">
-      Gough
-    </div>
-    
-    <div id="menu_container">
-      <ul>
-        <li><a href="/portfolio/">Portfolio</a></li>
-        <li><a href="/buy/">Buy</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </div>
-    
-    <div id="content_container">
-      {{ content }} 
+    <div id="wrapper">
+      <div id="stripe"></div>
+      
+      <div id="header">
+        <div id="logo">
+          <a href="/">
+            Gough
+          </a>
+        </div>
+        
+        <div id="menu">
+          <ul>
+            <li><a href="/portfolio/index.html">Portfolio</a></li>
+            <li><a href="/buy.html">Buy</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div id="content">
+        {{ content }}
+      </div>
+      
+      <div class="clearfix"></div>
+      
+      <div id="footer">
+        Copyright &copy; 2012 Aaron Gough, all rights reserved.
+      </div>
     </div>
     
     <script type="text/javascript">
