@@ -5,6 +5,11 @@ title: Blog
 
 <h1>Blog</h1>
 
+<p>This blog is a place where I can post information about prototypes and experiments as I work
+on them. Where possible I try to post enough information to allow other people to replicate the
+things that I document in the blog. If you want more information about a particular item please
+feel free to <a href="/contact.html">Contact Me.</a></p>
+
 <ul id="blog_list">
   {% for post in site.categories.blog %}
   <li>{{ forloop.length | minus:forloop.index0 }} - <a href="{{ post.url }}">{{ post.title }}</a></li>
