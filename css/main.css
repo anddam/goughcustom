@@ -58,6 +58,12 @@ border-radius: 4px;
 
 a{
 color: #2a2a2a;
+text-decoration: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+a:hover{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 
@@ -107,6 +113,7 @@ color: #2a2a2a;
   font: 35px/35px 'DanielBold', Arial, sans-serif;
   color: #2a2a2a;
   text-decoration: none;
+  border-bottom: none;
 }
 
 #menu{
@@ -128,6 +135,7 @@ color: #2a2a2a;
 #menu ul li a{
   display: block;
   text-decoration: none;
+  border-bottom: none;
   color: #2a2a2a;
   padding: 0 10px 0 10px;
 }
