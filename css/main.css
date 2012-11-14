@@ -25,45 +25,59 @@ body{
 }
 
 pre{
-padding: 10px;
-background: #393939;
-border: 1px solid silver;
-color: #2a2a2a;
-display: block;
-font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
-border-radius: 4px;
-line-height: 1.1em;
-overflow: hidden;
-overflow-x: auto;
-overflow-y: hidden;
+  padding: 10px;
+  background: #393939;
+  border: 1px solid silver;
+  color: #2a2a2a;
+  display: block;
+  font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  line-height: 1.1em;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .lineno{
-color: grey;
-display: block;
-float: left;
-width: 20px;
-text-align: center;
+  color: grey;
+  display: block;
+  float: left;
+  width: 20px;
+  text-align: center;
 }
 
 p code, ul code{
-background: grey;
-padding: 2px 4px;
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
-border-radius: 4px;
+  background: grey;
+  padding: 2px 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 
 a{
-color: #efefef;
-text-decoration: none;
-border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #efefef;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 a:hover{
-  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  color: #a0c754;
+}
+
+h1{
+  margin-top: 0px;
+  padding-top: 0px;
+  font: 30px "QuicksandBook";
+  color: #efefef;
+}
+
+h2{
+  margin-top: 0px;
+  padding-top: 0px;
+  font: 25px "QuicksandBook";
+  color: #efefef;
 }
 
 
@@ -78,37 +92,21 @@ a:hover{
 }
 
 #header{
-  margin-top: 20px;
+  margin-top: 0px;
   position: relative;
   width: 880px;
-  height: 60px;
-}
-
-#little_stripe{
-  width: 100%;
-  height: 7px;
-  position: absolute;
-  top: 143px;
-  left: 0px;
-}
-
-#stripe{
-  width: 100%;
   height: 80px;
-  position: absolute;
-  top: 156px;
-  left: 0px;
 }
 
 #logo{
   position: absolute;
-  top: 0px;
+  bottom: 10px;
   left: 20px;
 }
 
 #logo a{
   text-shadow:0 -1px 0 rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.4);
-  font: 35px/35px 'DanielBold', Arial, sans-serif;
+  font: 35px 'DanielRegular', Arial, sans-serif;
   color: #a0c754;
   text-decoration: none;
   border-bottom: none;
@@ -116,8 +114,9 @@ a:hover{
 
 #menu{
   position: absolute;
-  top: 10px;
-  right: 20px;
+  bottom: 20px;
+  right: 8px;
+  text-align: right;
 }
 
 #menu ul{
@@ -135,15 +134,19 @@ a:hover{
   text-decoration: none;
   border-bottom: none;
   color: #efefef;
-  padding: 0 10px 0 10px;
+  padding: 0 15px 0 15px;
+  font: 20px "QuicksandBook";
 }
 
-#default{
-  z-index: 9999;
-  position: relative;
-  text-align: left;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+#menu ul li a:hover{
+  color: #a0c754;
+}
+
+.tagline{
   padding-top: 20px;
+  text-align: left;
+  color: #a0c754;
+  font: 30px "QuicksandBook";
 }
 
 #content{
@@ -170,6 +173,16 @@ a:hover{
   top: -110px;
 }
 
+#feature_description{
+  position: absolute;
+  bottom : 0px;
+  left: 0px;
+  width: 840px;
+  padding: 10px 20px 10px 20px;
+  background: rgba(0,0,0,0.5);
+  color: rgba(255, 255, 255, 0.6);
+}
+
 #subfeature_1{
   margin-right: 20px;
 }
@@ -194,6 +207,8 @@ a:hover{
   font-size: 10px;
   text-align: right;
   padding-top: 20px;
+  padding-right: 20px;
+  color: rgba(255, 255, 255, 0.2);
 }
 
 .clearfix{
@@ -228,18 +243,20 @@ a:hover{
 }
 
 .signature{
-font: 30px/35px 'DanielRegular', Arial, sans-serif;
-letter-spacing: 0;
-margin-left: 17px;
-padding-top: 10px;
+  font: 35px 'DanielRegular', Arial, sans-serif;
+  letter-spacing: 0;
+  margin-left: 17px;
+  padding-top: 10px;
+  color: #a0c754;
+  text-align: right;
 }
 
 .content_image{
-width: 790px;
-display: block;
-background: #efefef;
-margin: 10px auto;
-padding: 15px;
-border-radius: 3px;
-box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  width: 790px;
+  display: block;
+  background: #efefef;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
