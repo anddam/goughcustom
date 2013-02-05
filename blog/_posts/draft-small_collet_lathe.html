@@ -3,36 +3,55 @@ layout: content
 title: Whisper: A small collet lathe
 ---
 
-<p>For quite some time now I have wanted to make myself a small lathe. Of higher-quality than the 7xx series mini-lathes, but larger (especially in the spindle bore) than the Sherline or Taig lathes.</p>
-
-<p>With this bubbling away at the back of my brain I suddenly had an idea! Why not make a small lathe that used ER32 collets? They're readily available, accurate and strong, and most of the work I do is with round bars. Ideally I could fit a chuck as well, but as this first lathe is mainly an experiment being limited to collets would not be the end of the world.</p>
-
-<p>Looking around eBay I was able to find many ER32 collet chucks with long, straight, precision-ground shanks. A collet chuck like this is basically already a spindle; in the simplest form you could just wrap some bearings around that shaft and use it nearly as-is. My plan was to get a little more sophisticated though, I found a collet chuck with a 1.25" diameter shank that matched the readily available tapered roller bearings from VXB. If I anneal the rear portion of the collet chuck's shank, I can thread it so as to provide a mechanism for pre-loading the roller bearings and retaining a pulley for driving the spindle. The collet chuck are quite inexpensive (around $60 including shipping) and a full set of collets is not much more. To get the maximum capacity out of the collet chuck I planned to expand the thru-bore from its standard 16mm size up to 0.8" which is just larger than the largest diameter an ER32 collet can hold.</p>
+<p>For quite some time now I have wanted to make myself a small CNC lathe. For small work and limited production I don't need a huge industrial machine, and given my space constraints smaller is better within reasonable limits. Having gang tooling and also possibly basic live tooling would be a real asset. Quite aside from anything else I see this as being a fun and challenging project!</p>
 
 <h2>Goals and specifications:</h2>
 
 <p>
   <ul>
-    <li>Bore through spindle: 0.8"</li>
+    <li>Bore through spindle: 1-3/8"</li>
+    <li>Spindle taper: 5C</li>
     <li>Swing over cross-slide: 2"</li>
-    <li>Distance between centres: 6"</li>
-    <li>Spindle speed: 50 - 5000RPM (Continuously variable)</li>
-    <li>Spindle motor output: 300 watts or greater</li>
+    <li>Cross-slide travel: 12" (for gang tooling)</li>
+    <li>Z-axis travel: 12"</li>
+    <li>Spindle speed: 50 - 4000RPM (Continuously variable)</li>
+    <li>Spindle motor output: 500 watts or greater</li>
+    <li>Rapid speed: 200IPM or greater</li>
   </ul>
 </p>
 
 <h2>Research:</h2>
 
-<p>Given that making a lathe from scratch requires a number of parts that aren't commonly machined in the small shop, I thought I had better do some research. Below are links to the web-pages that I found useful:</p>
+<p>Building machinery like this from scratch is something that simply isn't done all that often, so there's not a huge amount of information around. The most interesting and pertinent information seems to come from people that have done conversions of small manual lathes to CNC. Below I've listed a few of the online resources that I found most interesting or useful.</p>
 
 <p>
   <ul>
-    <li><a href="http://www.deansphotographica.com/machining/atlas/ER25/ER25.html">Making an ER25 collet chuck.</a></li>
+    <li><a href="http://www.cnczone.com/forums/vertical_mill_lathe_project_log/92337-granite_surface_plate_lathe.html">Granite surface plate CNC lathe.</a></li>
     <li><a href=""></a></li>
     <li><a href=""></a></li>
     <li><a href=""></a></li>
   </ul>
 </p>
+
+<h2>The Spindle:</h2>
+
+<p>The most difficult part of this build is the spindle, no two ways about it. If 5C spindles were commonly available as a complete and inexpensive unit then undoubtedly more people would be scratch-building small CNC lathes. Over the course of my research I have oscillated between several different options: Buy a pre-made spindle from Dunham Tool, make a spindle from scratch, or make a spindle by piecing together off-the-shelf components.</p>
+
+<p>The option of buying a pre-made spindle is very attractive, but only really viable if you have a large budget. A headstock assembly from Dunham Tool will cost almost $3000 complete with collet closer unless you're able to source one second-hand. I have only seen one headstock assembly second-hand and it went for about USD$1000. Assuming that's out of our budget we have to look at fabricating a spindle.</p>
+
+<p>When fabricating a spindle we have a couple of options: fabricate the spindle from scratch or fabricate the spindle from pieced together components. If you have access to a well equipped machine shop then fabricating a spindle body and housing from scratch may be a viable option. The spindle body is the most complex part because the spindle taper and OD need to be closely concentric and machined to close tolerances.</p>
+  
+<p>To make life a little easier we can re-purpose some purchased parts to make the spindle body. The 5C spindle from an inexpensive spin-indexer is perfect for this as they are already precision ground on both the outer diameter and the internal 5C taper.</p>
+
+<p>It's worth noting something important about spindle precision. There's two main types of precision that come to mind when talking about spindles: Total Indicator Readout (TIR), and out-of-round. TIR refers to how closely the spindle holds work oriented to the ideal axis along the lathe, out-of-round refers to how closely the spindle, when rotated, tracks as compared to a perfect circle. Out-of-round conditions are hard to measure and probably not worth worrying about for non-commercial grade machines, we'll just assume that our bearings are 'round enough'. TIR is important in two senses: the greater the TIR the greater any given workpiece will taper toward the tailstock, and secondly the greater the TIR the greater the discrepancy created between cuts when re-chucking workpieces. The second consideration can be eliminated if you decide, like I did, that your lathe will only be used to produce a finished part in a single series of operations. This means you just have to worry about taper. Most of the parts that I make have relatively loose tolerances, and as such I would be happy with 0.005" TIR @ 4" from the collet face.</p>
+
+<p>When making or piecing together the spindle then there's also the question of bearings. Deep-groove, tapered roller or angular contact? Most commercial CNC spindles use a matched pairs of angular contact bearings at the spindle nose. A single matched pair of bearings in the size we'd need would run upward of $500 for the bearings alone. There's also little chance that we could fabricate the rest of the spindle accurately enough to make use of bearings that accurate.</p>
+
+<p>Tapered roller bearings sound ideal on paper as the have high axial and radial load-carrying capacities, and are extremely stiff because of their large contact area. More importantly they're relatively inexpensive. The downside is that it's impossible to get sealed or even shielded tapered roller bearings which means we would have to use separate oil seals. The oil seals make the spindle construction more complex and take up room which means that the spindle taper ends up being too far from the bearings for my liking.</p>
+
+<p>The last option, deep groove ball bearings, is one that users of industrial CNC lathes will speak quite loudly against. For their size deep-groove bearings have low axial load carrying abilities when compared to either tapered-roller or angular-contact bearings. But, for the purpose of a small CNC lathe that axial load capacity is likely more than adequate. For 6200 series bearings the axial load capacity is about 50% of the radial load capacity, which is actually fairly respectable. The simple fact is that there are many lathes out there which use deep-groove bearings, all the 7x12 lathes for example, and are capable of decent work. Additionally deep-groove bearings are extremely common, available in many sizes, available sealed and shielded, and inexpensive.</p>
+
+<p>For a small CNC lathe then deep-groove ball-bearings are likely more than capable. What's more if we size them such that an identically sized angular-contact bearing can be dropped in then we get the best of both worlds. Low initial cost with the option to upgrade if needed.</p>
 
 <h2>Bill of materials:</h2>
 
