@@ -1,0 +1,34 @@
+---
+layout: content
+title: Blog
+---
+
+%h1 
+  Behind The Scenes
+
+%p
+  This is a place where I can share the lessons learnt during the various projects that I work on. Given the decline of trade skills occurring in most first-world countries I think it is important to disseminate this information as widely as possible.
+
+
+%h2 
+  Learning
+
+%p 
+  It's surprisingly hard these days to 'just go somewhere' and learn basic machine skills, particularly if you can only do so on a part-time basis. There are still a number of woodworking courses and schools around, but the metal trades seem to have largely evaporated.
+
+%p
+  In order to help combat this I offer people from all walks of life the chance to come in and spend time with me in my shop. Whether you want to learn woodworking, metalworking or even CAD/CAM/CNC the equipment and know-how are all here. <a href="/contact.html">Contact me</a> for more details.
+
+%h2 
+  Resource List
+
+%p
+  This list is a shortcut to the suppliers that I use and trust, as well as a library of useful links and information collected from other sites. Check it out here: <a href="/resources.html">Resource List</a>
+
+%h2 
+  Blog
+
+%ul#blog_list
+  - category("blog").each do |post|
+    %li
+      %a{:href => post.relative_output_path}= post.title
