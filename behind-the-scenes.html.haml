@@ -1,0 +1,31 @@
+---
+layout: content
+title: Behind the scenes
+---
+
+%h1 Behind The Scenes
+  
+%p 
+  It's been my experience that people love things with a story associated with them. If you have seen how something was made, have witnessed the care and dedication that went into it's crafting, then that's a very different experience than buying something that's been made in a factory.
+  
+%p 
+  This page is  dedicated to giving my customers a good long look into how I design and make my knives. I also list information here that will be helpful for other knifemakers as I think it's important to share the things I've learnt.
+
+%p
+  %a{:href => "/my-workshop.html"} Take a tour of my workshop!
+  
+%p
+  %a{:href => "/videos.html"} Watch me making various knives!
+
+%p
+  %a{:href => "/resources.html"} A list of suppliers and websites that I use and recommend.
+  
+%h2 Blog
+
+%p
+  When I'm working on prototypes, building new tooling, or experimenting with new process and designs I always try to document the process thoroughly and share it widely. This is for two reasons: first, I enjoy engaging with my customers and other knifemakers this way. Second, I've often found that the feedback from other people has made the difference between a good result and a great one!
+  
+%ul#blog_list
+  - category("blog").each do |post|
+    %li
+      %a{:href => post.relative_output_path}= post.title

@@ -24,14 +24,18 @@
         
         #menu
           %ul
-            %li <a href="/portfolio/index.html">Portfolio</a></li>
-            %li <a href="/blog/index.html">Behind The Scenes</a></li>
-            %li <a href="/about.html">About</a></li>
-            %li <a href="/contact.html">Contact</a></li>
+            %li 
+              %a{:href => "/gallery/index.html"} Gallery
+            %li 
+              %a{:href => "/behind-the-scenes.html"} Behind The Scenes
+            %li 
+              %a{:href => "/about.html"} About
+            %li
+              %a{:href => "/contact.html"} Contact
       
       #content
         = yield
-        #clearfix
+        .clearfix
       
       #footer
         Copyright &copy; 2012 Gough Custom, all rights reserved.
