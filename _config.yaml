@@ -1,2 +1,3 @@
 photo_resize:
   size: "1024x768"
+  enabled: true

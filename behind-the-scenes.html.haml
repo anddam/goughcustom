@@ -26,6 +26,6 @@ title: Behind the scenes
   When I'm working on prototypes, building new tooling, or experimenting with new process and designs I always try to document the process thoroughly and share it widely. This is for two reasons: first, I enjoy engaging with my customers and other knifemakers this way. Second, I've often found that the feedback from other people has made the difference between a good result and a great one!
   
 %ul#blog_list
-  - category("blog").each do |post|
+  - category("blog").reverse.each do |post|
     %li
       %a{:href => post.relative_output_path}= post.title
