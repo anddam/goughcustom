@@ -22,10 +22,18 @@ title: Behind the scenes
   
 %h2 Blog
 
-%p
-  When I'm working on prototypes, building new tooling, or experimenting with new processes and designs, I always try to document the process thoroughly and share it widely. This is for two reasons: first, I enjoy engaging with my customers and other makers this way. Second, I've often found that the feedback from other people has made the difference between a good result and a great one!
+%p When I'm working on prototypes, building new tooling, or experimenting with new processes and designs, I always try to document the process thoroughly and share it widely. This is for two reasons: first, I enjoy engaging with my customers and other makers this way. Second, I've often found that the feedback from other people has made the difference between a good result and a great one!
   
 %ul#blog_list
   - category("blog").reverse.each do |post|
+    %li
+      %a{:href => post.relative_output_path}= post.title
+      
+%h2 Question and Answer
+
+%p Every day I get asked a number of interesting questions by people who are interested in learning more about how to make things, like knives, for themselves. In the interests of sharing knowledge I'm preserving the best of those questions here along with my answers. If you'd like to ask a question please  email me: <a href="mailto:aaron@goughcustom.com">aaron@goughcustom.com</a>
+      
+%ul#blog_list
+  - category("question_and_answer").each do |post|
     %li
       %a{:href => post.relative_output_path}= post.title
