@@ -81,6 +81,13 @@ strong{
   color: #a0c754;
 }
 
+.notice{
+  border: 2px solid red;
+  background: #B01010;
+  color: #efefef;
+  padding: 20px;
+}
+
 
 /************************************************
 		Custom Styling for Specific IDs		
